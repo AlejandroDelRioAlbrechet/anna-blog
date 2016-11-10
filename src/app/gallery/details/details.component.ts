@@ -21,7 +21,7 @@ export class DetailsComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.subscription = this.route.params.subscribe(params => {
       this.galeryPosts = this.groupGalleryElements(
-        this.route.snapshot.data['galleryPosts'], 
+        this.route.snapshot.data['galleryPosts'],
         params['date']
       );
     });
@@ -72,7 +72,7 @@ export class DetailsComponent implements OnInit, OnDestroy {
       .children[1]
       .children[1],
       scrollPosition = container.scrollLeft;
-      
+
     this.move(scrollTo, scrollPosition, scrollTo - scrollPosition > 0);
   }
 

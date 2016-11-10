@@ -7,7 +7,6 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { DetailsComponent } from './gallery/details/details.component';
 import { UsefulMaterialsComponent } from './useful-materials/useful-materials.component';
 import { ProfileComponent } from './profile/profile.component';
-import { InfoComponent } from './info/info.component';
 
 /* --- Resolvers --- */
 import { NewsResolver } from './news/news.resolver';
