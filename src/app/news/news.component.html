@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-header bg-info">Новини</div>
+  <div class="card-block">
+    <div *ngFor="let post of newsPosts">
+      <div class="news-item clearfix">
+        <h6><strong>{{post.title}}</strong></h6>
+        <div>
+          <img src="{{post.image}}" class="img-thumbnail pull-left">
+          <p [innerHTML]="post.text"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

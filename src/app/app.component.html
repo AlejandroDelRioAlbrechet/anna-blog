@@ -1,3 +1,24 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-fixed-top navbar-full bg-info bg-faded" role="navigation">
+  <a class="navbar-brand" routerLink="/news">
+    <img src="./assets/images/profile-small.jpg">
+    <span>Анна Михайлівна Мартинюк</span>
+  </a>
+  <ul class="nav navbar-nav pull-right">
+    <li class="nav-item"><a routerLink="/news" routerLinkActive="active" class="nav-link">Новини</a></li>
+    <li class="nav-item"><a routerLink="/profile" routerLinkActive="active" class="nav-link">Профайл Викладача</a></li>
+    <li class="nav-item"><a routerLink="/gallery" routerLinkActive="active" class="nav-link">Галерея</a></li>
+    <li class="nav-item"><a routerLink="/materials" routerLinkActive="active" class="nav-link">Корисні Матеріали</a></li>
+    <li class="nav-item"><a routerLink="/contacts" routerLinkActive="active" class="nav-link">Контакти</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <app-info></app-info>
+    </div>
+    <div class="col-sm-8">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

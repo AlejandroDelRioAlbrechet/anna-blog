@@ -1,0 +1,10 @@
+<div class="gallery-detail">
+  <h3>{{galeryPosts[0].title}}</h3>
+  <div>
+    <i class="fa fa-angle-left" (click)="movePrev()" *ngIf="galeryPosts.length > 1"></i>
+    <div class="image-container">
+      <img *ngFor="let image of galeryPosts" src="{{image.image}}" class="float-xs-left rounded">
+    </div>
+    <i class="fa fa-angle-right" (click)="moveNext()" *ngIf="galeryPosts.length > 1"></i>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="card gallery">
+  <div class="card-header bg-info">Доступні галереї</div>
+  <div class="card-block">
+    <div *ngFor="let gallery of galeryPosts">
+      <div class="single-galley">
+        <a routerLink="/gallery/{{gallery[0].date}}" routerLinkActive="active">
+          <img src="{{gallery[0].image}}"class="img-thumbnail float-xs-left">
+          <h6>{{gallery[0].date}}</h6>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
