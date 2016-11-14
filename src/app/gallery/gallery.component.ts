@@ -18,7 +18,7 @@ export class GalleryComponent implements OnInit {
     this.galeryPosts = this.groupGalleryElements(this.route.snapshot.data['galleryPosts']);
   }
 
-  private groupGalleryElements(galeryPosts: GalleryPost[]): Array<GalleryPost[]>{
+  private groupGalleryElements(galeryPosts: GalleryPost[]): Array<GalleryPost[]> {
     let grouppedByDate = _.groupBy(galeryPosts, (galleryPost: GalleryPost) => {
       return galleryPost.date;
     });

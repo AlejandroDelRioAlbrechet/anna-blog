@@ -8,9 +8,9 @@ import { GalleryPost } from './galleryPost';
 @Injectable()
 export class GalleryResolver implements Resolve<GalleryPost[]> {
 
-  constructor(private galleryService:GalleryService) {}
+  constructor(private galleryService: GalleryService) {}
 
-  resolve(route: ActivatedRouteSnapshot) : Observable<GalleryPost[]> {
+  resolve(route: ActivatedRouteSnapshot): Observable<GalleryPost[]> {
     return this.galleryService.getGalleryPosts();
   }
 
