@@ -6,7 +6,7 @@ import {GalleryPost} from './galleryPost';
 
 @Injectable()
 export class GalleryService {
-  private newApiEndPoit = '/assets/anna.gallery.json';
+  private newApiEndPoit = './assets/anna.gallery.json';
   constructor(private http: Http) { }
 
   getGalleryPosts(): Observable<GalleryPost[]> {

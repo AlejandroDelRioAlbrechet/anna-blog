@@ -6,7 +6,7 @@ import { NewsPost } from './newsPost';
 
 @Injectable()
 export class NewsService {
-  private newApiEndPoit = '/assets/anna.news.json';
+  private newApiEndPoit = './assets/anna.news.json';
 
   constructor(private http: Http) {}
 
